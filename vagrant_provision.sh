@@ -5,3 +5,6 @@ apt-get update
 
 echo "Installing Git"
 apt-get install -y git
+
+echo "Updating to npm 2.6.0"
+npm install -g npm@2.6.0
