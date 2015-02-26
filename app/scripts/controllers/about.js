@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name vagrantApp.controller:MainCtrl
+ * @name vagrantApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the vagrantApp
  */
 angular.module('vagrantApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
