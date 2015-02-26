@@ -30,3 +30,4 @@ echo "*********************"
 npm install --global yo 
 npm install --global bower 
 npm install --global grunt-cli
+npm install --global generator-angular@0.9.2
