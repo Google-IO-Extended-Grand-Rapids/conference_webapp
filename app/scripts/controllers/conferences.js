@@ -8,14 +8,8 @@
  * Controller of the vagrantApp
  */
 angular.module('vagrantApp')
-  .controller('ConferencesCtrl', ['$scope', '$http', function ($scope, $http) {
-    $scope.conferenceList = [{name: "Conference1"}, {name: "Conference2"}];
-    $http.get('data/conferences.json').
-        success(function(data, status, headers, config) {
-          $scope.conferences = data;
-        }).
-        error(function(data, status, headers, config) {
-          // log error
-        });
+  .controller('ConferencesCtrl', ['$scope', 'conferences', function ($scope, conferences) {
+    $scope.conferenceList = [{name: 'Conference1'}, {name: 'Conference2'}];
+    $scope.conferences = conferences;
   }]
 );

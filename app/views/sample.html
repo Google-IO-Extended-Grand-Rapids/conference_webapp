@@ -1,0 +1,17 @@
+<p>This is the sample view.</p>
+<div>{{awesomeThings}}</div>
+
+<div>
+    <div>{{state}} Start:</div>
+    <div>{{errors}}</div>
+    <div>{{state}} End:</div>
+</div>
+<div id="conferencesList">
+  <div ng-repeat="currConference in conferences">
+      <div>{{currConference.id}}: {{currConference.name}}</div>
+      <div>{{currConference.fullDesc}}</div>
+      <div>{{currConference.startDate}} - {{currConference.endDate}}</div>
+      <div>{{currConference.locationView.id}} - {{currConference.locationView.name}} - {{currConference.locationView.fullDesc}}</div>
+      <br />
+  </div>
+</div>
