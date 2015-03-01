@@ -1,0 +1,166 @@
+[
+    {
+        "conferenceId": 1,
+        "createDttm": 1425245321133,
+        "durationMinutes": 60,
+        "fullDesc": "Full description of the session talk for session: 51",
+        "id": 51,
+        "lastUpdateDttm": 1425245321133,
+        "name": "Name of Session for 51",
+        "presenterIds": [
+            100,
+            101,
+            109,
+            107
+        ],
+        "roomId": -1,
+        "shortDesc": "Short Description Session: 51",
+        "startDttm": 1425245321133
+    },
+    {
+        "conferenceId": 2,
+        "createDttm": 1425245321133,
+        "durationMinutes": 30,
+        "fullDesc": "Full description of the session talk for session: 50",
+        "id": 50,
+        "lastUpdateDttm": 1425245321133,
+        "name": "Name of Session for 50",
+        "presenterIds": [
+            105
+        ],
+        "roomId": -1,
+        "shortDesc": "Short Description Session: 50",
+        "startDttm": 1425245321133
+    },
+    {
+        "conferenceId": 2,
+        "createDttm": 1425245321133,
+        "durationMinutes": 60,
+        "fullDesc": "Full description of the session talk for session: 55",
+        "id": 55,
+        "lastUpdateDttm": 1425245321133,
+        "name": "Name of Session for 55",
+        "presenterIds": [
+            101,
+            109,
+            106,
+            104
+        ],
+        "roomId": -1,
+        "shortDesc": "Short Description Session: 55",
+        "startDttm": 1425245321133
+    },
+    {
+        "conferenceId": 4,
+        "createDttm": 1425245321133,
+        "durationMinutes": 30,
+        "fullDesc": "Full description of the session talk for session: 54",
+        "id": 54,
+        "lastUpdateDttm": 1425245321133,
+        "name": "Name of Session for 54",
+        "presenterIds": [
+            101
+        ],
+        "roomId": -1,
+        "shortDesc": "Short Description Session: 54",
+        "startDttm": 1425245321133
+    },
+    {
+        "conferenceId": 6,
+        "createDttm": 1425245321133,
+        "durationMinutes": 60,
+        "fullDesc": "Full description of the session talk for session: 53",
+        "id": 53,
+        "lastUpdateDttm": 1425245321133,
+        "name": "Name of Session for 53",
+        "presenterIds": [
+            100,
+            108,
+            109,
+            106
+        ],
+        "roomId": -1,
+        "shortDesc": "Short Description Session: 53",
+        "startDttm": 1425245321133
+    },
+    {
+        "conferenceId": 7,
+        "createDttm": 1425245321133,
+        "durationMinutes": 30,
+        "fullDesc": "Full description of the session talk for session: 52",
+        "id": 52,
+        "lastUpdateDttm": 1425245321133,
+        "name": "Name of Session for 52",
+        "presenterIds": [
+            101
+        ],
+        "roomId": -1,
+        "shortDesc": "Short Description Session: 52",
+        "startDttm": 1425245321133
+    },
+    {
+        "conferenceId": 2,
+        "createDttm": 1425245321133,
+        "durationMinutes": 60,
+        "fullDesc": "Full description of the session talk for session: 59",
+        "id": 59,
+        "lastUpdateDttm": 1425245321133,
+        "name": "Name of Session for 59",
+        "presenterIds": [
+            101,
+            107,
+            104
+        ],
+        "roomId": -1,
+        "shortDesc": "Short Description Session: 59",
+        "startDttm": 1425245321134
+    },
+    {
+        "conferenceId": 1,
+        "createDttm": 1425245321133,
+        "durationMinutes": 30,
+        "fullDesc": "Full description of the session talk for session: 58",
+        "id": 58,
+        "lastUpdateDttm": 1425245321133,
+        "name": "Name of Session for 58",
+        "presenterIds": [
+            103
+        ],
+        "roomId": -1,
+        "shortDesc": "Short Description Session: 58",
+        "startDttm": 1425245321133
+    },
+    {
+        "conferenceId": 2,
+        "createDttm": 1425245321133,
+        "durationMinutes": 60,
+        "fullDesc": "Full description of the session talk for session: 57",
+        "id": 57,
+        "lastUpdateDttm": 1425245321133,
+        "name": "Name of Session for 57",
+        "presenterIds": [
+            103,
+            109,
+            107,
+            104
+        ],
+        "roomId": -1,
+        "shortDesc": "Short Description Session: 57",
+        "startDttm": 1425245321133
+    },
+    {
+        "conferenceId": 7,
+        "createDttm": 1425245321133,
+        "durationMinutes": 30,
+        "fullDesc": "Full description of the session talk for session: 56",
+        "id": 56,
+        "lastUpdateDttm": 1425245321133,
+        "name": "Name of Session for 56",
+        "presenterIds": [
+            100
+        ],
+        "roomId": -1,
+        "shortDesc": "Short Description Session: 56",
+        "startDttm": 1425245321133
+    }
+]

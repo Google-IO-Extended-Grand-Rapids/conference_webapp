@@ -1,2 +1,192 @@
-{name: "Conference 3"},
-{name: "Conference 4"}
+[
+    {
+        "createDttm": "2015-03-01T16:28:41",
+        "endDate": "2015-03-01T16:28:41",
+        "fullDesc": "Conference: 0 The complete full description in all of it's glory",
+        "id": 0,
+        "lastUpdateDttm": "2015-03-01T16:28:41",
+        "locationView": {
+            "createDttm": "2015-03-01T16:28:41",
+            "fullDesc": "Full Description Location: 0",
+            "id": 0,
+            "lastUpdateDttm": "2015-03-01T16:28:41",
+            "name": "Location 0",
+            "parkingInfo": "The parking information for Location: 0 is the following....",
+            "shortDesc": "Location: 0"
+        },
+        "name": "Conference 0",
+        "shortDesc": "Conf 0 short desc",
+        "startDate": "2015-03-01T16:28:41"
+    },
+    {
+        "createDttm": "2015-03-01T16:28:41",
+        "endDate": "2015-03-01T16:28:41",
+        "fullDesc": "Conference: 1 The complete full description in all of it's glory",
+        "id": 1,
+        "lastUpdateDttm": "2015-03-01T16:28:41",
+        "locationView": {
+            "createDttm": "2015-03-01T16:28:41",
+            "fullDesc": "Full Description Location: 1",
+            "id": 1,
+            "lastUpdateDttm": "2015-03-01T16:28:41",
+            "name": "Location 1",
+            "parkingInfo": "The parking information for Location: 1 is the following....",
+            "shortDesc": "Location: 1"
+        },
+        "name": "Conference 1",
+        "shortDesc": "Conf 1 short desc",
+        "startDate": "2015-03-01T16:28:41"
+    },
+    {
+        "createDttm": "2015-03-01T16:28:41",
+        "endDate": "2015-03-01T16:28:41",
+        "fullDesc": "Conference: 2 The complete full description in all of it's glory",
+        "id": 2,
+        "lastUpdateDttm": "2015-03-01T16:28:41",
+        "locationView": {
+            "createDttm": "2015-03-01T16:28:41",
+            "fullDesc": "Full Description Location: 2",
+            "id": 2,
+            "lastUpdateDttm": "2015-03-01T16:28:41",
+            "name": "Location 2",
+            "parkingInfo": "The parking information for Location: 2 is the following....",
+            "shortDesc": "Location: 2"
+        },
+        "name": "Conference 2",
+        "shortDesc": "Conf 2 short desc",
+        "startDate": "2015-03-01T16:28:41"
+    },
+    {
+        "createDttm": "2015-03-01T16:28:41",
+        "endDate": "2015-03-01T16:28:41",
+        "fullDesc": "Conference: 3 The complete full description in all of it's glory",
+        "id": 3,
+        "lastUpdateDttm": "2015-03-01T16:28:41",
+        "locationView": {
+            "createDttm": "2015-03-01T16:28:41",
+            "fullDesc": "Full Description Location: 3",
+            "id": 3,
+            "lastUpdateDttm": "2015-03-01T16:28:41",
+            "name": "Location 3",
+            "parkingInfo": "The parking information for Location: 3 is the following....",
+            "shortDesc": "Location: 3"
+        },
+        "name": "Conference 3",
+        "shortDesc": "Conf 3 short desc",
+        "startDate": "2015-03-01T16:28:41"
+    },
+    {
+        "createDttm": "2015-03-01T16:28:41",
+        "endDate": "2015-03-01T16:28:41",
+        "fullDesc": "Conference: 4 The complete full description in all of it's glory",
+        "id": 4,
+        "lastUpdateDttm": "2015-03-01T16:28:41",
+        "locationView": {
+            "createDttm": "2015-03-01T16:28:41",
+            "fullDesc": "Full Description Location: 4",
+            "id": 4,
+            "lastUpdateDttm": "2015-03-01T16:28:41",
+            "name": "Location 4",
+            "parkingInfo": "The parking information for Location: 4 is the following....",
+            "shortDesc": "Location: 4"
+        },
+        "name": "Conference 4",
+        "shortDesc": "Conf 4 short desc",
+        "startDate": "2015-03-01T16:28:41"
+    },
+    {
+        "createDttm": "2015-03-01T16:28:41",
+        "endDate": "2015-03-01T16:28:41",
+        "fullDesc": "Conference: 5 The complete full description in all of it's glory",
+        "id": 5,
+        "lastUpdateDttm": "2015-03-01T16:28:41",
+        "locationView": {
+            "createDttm": "2015-03-01T16:28:41",
+            "fullDesc": "Full Description Location: 5",
+            "id": 5,
+            "lastUpdateDttm": "2015-03-01T16:28:41",
+            "name": "Location 5",
+            "parkingInfo": "The parking information for Location: 5 is the following....",
+            "shortDesc": "Location: 5"
+        },
+        "name": "Conference 5",
+        "shortDesc": "Conf 5 short desc",
+        "startDate": "2015-03-01T16:28:41"
+    },
+    {
+        "createDttm": "2015-03-01T16:28:41",
+        "endDate": "2015-03-01T16:28:41",
+        "fullDesc": "Conference: 6 The complete full description in all of it's glory",
+        "id": 6,
+        "lastUpdateDttm": "2015-03-01T16:28:41",
+        "locationView": {
+            "createDttm": "2015-03-01T16:28:41",
+            "fullDesc": "Full Description Location: 6",
+            "id": 6,
+            "lastUpdateDttm": "2015-03-01T16:28:41",
+            "name": "Location 6",
+            "parkingInfo": "The parking information for Location: 6 is the following....",
+            "shortDesc": "Location: 6"
+        },
+        "name": "Conference 6",
+        "shortDesc": "Conf 6 short desc",
+        "startDate": "2015-03-01T16:28:41"
+    },
+    {
+        "createDttm": "2015-03-01T16:28:41",
+        "endDate": "2015-03-01T16:28:41",
+        "fullDesc": "Conference: 7 The complete full description in all of it's glory",
+        "id": 7,
+        "lastUpdateDttm": "2015-03-01T16:28:41",
+        "locationView": {
+            "createDttm": "2015-03-01T16:28:41",
+            "fullDesc": "Full Description Location: 7",
+            "id": 7,
+            "lastUpdateDttm": "2015-03-01T16:28:41",
+            "name": "Location 7",
+            "parkingInfo": "The parking information for Location: 7 is the following....",
+            "shortDesc": "Location: 7"
+        },
+        "name": "Conference 7",
+        "shortDesc": "Conf 7 short desc",
+        "startDate": "2015-03-01T16:28:41"
+    },
+    {
+        "createDttm": "2015-03-01T16:28:41",
+        "endDate": "2015-03-01T16:28:41",
+        "fullDesc": "Conference: 8 The complete full description in all of it's glory",
+        "id": 8,
+        "lastUpdateDttm": "2015-03-01T16:28:41",
+        "locationView": {
+            "createDttm": "2015-03-01T16:28:41",
+            "fullDesc": "Full Description Location: 8",
+            "id": 8,
+            "lastUpdateDttm": "2015-03-01T16:28:41",
+            "name": "Location 8",
+            "parkingInfo": "The parking information for Location: 8 is the following....",
+            "shortDesc": "Location: 8"
+        },
+        "name": "Conference 8",
+        "shortDesc": "Conf 8 short desc",
+        "startDate": "2015-03-01T16:28:41"
+    },
+    {
+        "createDttm": "2015-03-01T16:28:41",
+        "endDate": "2015-03-01T16:28:41",
+        "fullDesc": "Conference: 9 The complete full description in all of it's glory",
+        "id": 9,
+        "lastUpdateDttm": "2015-03-01T16:28:41",
+        "locationView": {
+            "createDttm": "2015-03-01T16:28:41",
+            "fullDesc": "Full Description Location: 9",
+            "id": 9,
+            "lastUpdateDttm": "2015-03-01T16:28:41",
+            "name": "Location 9",
+            "parkingInfo": "The parking information for Location: 9 is the following....",
+            "shortDesc": "Location: 9"
+        },
+        "name": "Conference 9",
+        "shortDesc": "Conf 9 short desc",
+        "startDate": "2015-03-01T16:28:41"
+    }
+]
