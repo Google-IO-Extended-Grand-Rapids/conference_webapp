@@ -29,14 +29,7 @@ angular
       })
       .when('/conferences', {
         templateUrl: 'views/conferences.html',
-        controller: 'ConferencesCtrl'//,
-        // resolve: {
-        //   conferences: ['$http', function($http) {
-        //     return $http.get('/data/conferences.json').then(function(response) {
-        //       return response.data;
-        //     })
-        //   }]
-        // }
+        controller: 'ConferencesCtrl'
       })
       .when('/sample', {
         templateUrl: 'views/sample.html',
