@@ -1,0 +1,129 @@
+@io-blue: #0088d4;
+@site-nav-bg: #000;
+@site-nav-link-color: #fff;
+
+.io-PageContainer {
+  padding: 0;
+}
+
+.io-SiteNav {
+  margin-bottom: 0;
+  border: none;
+  border-top: 5px solid @io-blue;
+  border-radius: 0;
+  background-color: @site-nav-bg;
+}
+
+.io-SiteNav-nav > li {
+  padding-bottom: 7px;
+}
+
+.io-SiteNav-nav > li > a {
+  display: inline-block;
+  margin: 3px 10px;
+  padding: 15px 5px 5px;
+  border-bottom: 5px solid transparent;
+  color: @site-nav-link-color;
+  font-size: 16px;
+}
+
+.io-SiteNav-nav > li.active > a,
+.io-SiteNav-nav > li > a:hover,
+.io-SiteNav-nav > li > a:focus {
+  background-color: transparent;
+  color: @io-blue;
+  border-bottom: 5px solid #fff;
+}
+
+.io-SiteNav-logo {
+  padding: 5px;
+  height: 60px;
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.io-PageHeader {
+  display: block;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.io-PageHeader-hero {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.io-PageHeader-heroDate {
+  display: block;
+  float: right;
+  margin: 10px;
+  font-family: Cabin, sans-serif;
+  font-size: 32px;
+  color: #fefefe;
+}
+
+.io-PageHeader-heroHeading {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1em 2em 1em 1em;
+  margin-bottom: 4em;
+  background-color: rgba(255,255,255,0.6);
+}
+
+.io-PageHeader-heroHeading-text {
+  margin: 0;
+  font-family: Cabin, sans-serif;
+  font-size: 24px;
+}
+
+.io-PageHeader-heroHeading-subtext {
+  margin: 0;
+  font-family: Cabin, sans-serif;
+  font-size: 20px;
+}
+
+.io-PageHeader-heading {
+  font-family: Cabin, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: @io-blue;
+}
+
+.io-SiteMain {
+  padding-top: 0;
+}
+
+.io-ContentArea {
+  display: block;
+}
+
+.io-ContentArea-header {}
+
+.io-ContentArea-header-banner,
+.io-ContentArea-header-title {
+  border-bottom: 5px solid @io-blue;
+}
+.io-ContentArea-header-banner + .io-ContentArea-header-title {
+  border-bottom: none;
+}
+
+.io-ContentArea-header-banner {
+  height: 180px;
+  background: url('//placehold.it/100x100');
+}
+
+.io-ContentArea-header-title {
+  font-family: Cabin, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.io-ContentArea-content {
+  font-family: Cabin, sans-serif;
+  font-size: 16px;
+  line-height: 170%;
+}
