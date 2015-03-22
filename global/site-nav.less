@@ -69,6 +69,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  min-width: 50%;
   padding: 1em 2em 1em 1em;
   margin-bottom: 4em;
   background-color: rgba(255,255,255,0.6);
@@ -77,7 +78,8 @@
 .io-PageHeader-heroHeading-text {
   margin: 0;
   font-family: Cabin, sans-serif;
-  font-size: 24px;
+  font-size: 36px;
+  color: #000;
 }
 
 .io-PageHeader-heroHeading-subtext {
@@ -86,7 +88,22 @@
   font-size: 20px;
 }
 
+.io-PageHeader-bannerHeading {
+  display: block;
+  background-color: @io-blue;
+}
+.io-PageHeader-bannerHeading-text {
+  margin: 0;
+  padding: .25em;
+  font-family: Cabin, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+
+}
+
 .io-PageHeader-heading {
+  padding: 0 15px;
   font-family: Cabin, sans-serif;
   font-size: 40px;
   font-weight: bold;
@@ -105,9 +122,13 @@
 
 .io-ContentArea-header-banner,
 .io-ContentArea-header-title {
+  margin: .7em 0 1em;
+  padding-bottom: .5em;
   border-bottom: 5px solid @io-blue;
 }
 .io-ContentArea-header-banner + .io-ContentArea-header-title {
+  margin: .7em 0;
+  padding-bottom: 0;
   border-bottom: none;
 }
 
@@ -121,9 +142,39 @@
   font-size: 24px;
   font-weight: bold;
 }
+.io-ContentArea-header-title--no-divider {
+  border: 0;
+  margin-bottom: .5em;
+}
 
 .io-ContentArea-content {
+  display: block;
   font-family: Cabin, sans-serif;
   font-size: 16px;
   line-height: 170%;
+}
+
+.io-SponsorReel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.io-SponsorReel-item {
+  display: inline-block;
+  margin: 0 0 15px 15px;
+  width: 14vw;
+  height: 14vw;
+  border: 1px solid gray;
+  background-color: lightgray;
+}
+.io-SponsorReel-item:first {
+  margin-left: 0;
+}
+
+.io-SiteFooter {
+  margin-top: 25px;
+  height: 200px;
+  background-color: lightgray;
+  border-bottom: 50px solid black;
 }
