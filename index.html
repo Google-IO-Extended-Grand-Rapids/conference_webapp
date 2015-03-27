@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="io2015">
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<link href="app.less" type="text/css" rel="stylesheet/less">
+<!-- Google Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- Livereload script for development only (stripped during dist build) -->
+<script src="http://localhost:35729/livereload.js" data-concat="false"></script>
+
+<!-- JS from Bower Components -->
+<script src="bower_components/less.js/dist/less-1.6.2.js" data-concat="false"></script>
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+<!-- Add New Bower Component JS Above -->
+
+
+<!-- Main App JS -->
+<script src="app.js"></script>
+<script src="partial/home/home.js"></script>
+<script src="partial/about/about.js"></script>
+<script src="partial/register/register.js"></script>
+<script src="partial/schedule/schedule.js"></script>
+<script src="partial/sponsors/sponsors.js"></script>
+<script src="partial/location/location.js"></script>
+<script src="partial/sponsors/sponsors.js"></script>
+<!-- Add New Component JS Above -->
+
+<nav class="navbar io-SiteNav container-fluid">
+  <div class="navbar-header io-SiteNav-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+      data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand io-SiteNav-logo" href="#/home">
+      <img src="https://s3.amazonaws.com/upload.uxpin/files/171719/191984/googleIOextended_horiz_grande-1.png" alt="Google I/O"/>
+    </a>
+  </div>
+
+  <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right io-SiteNav-nav">
+      <li><a ui-sref="about">About</a></li>
+      <li><a ui-sref="register">Register</a></li>
+      <li><a ui-sref="schedule">Schedule</a></li>
+      <li><a ui-sref="sponsors">Sponsors</a></li>
+      <li><a ui-sref="location">Location</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+<main id="content" class="container-fluid io-SiteMain">
+<div class="row" ui-view></div>
+</main>
+
+<footer class="io-SiteFooter"></footer>
+
+</body>
+</html>
