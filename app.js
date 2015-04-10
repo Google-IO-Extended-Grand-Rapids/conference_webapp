@@ -6,10 +6,6 @@ angular.module('io2015').config(function($stateProvider, $urlRouterProvider) {
         url: '/home',
         templateUrl: 'partial/home/home.html'
     });
-    $stateProvider.state('about', {
-        url: '/about',
-        templateUrl: 'partial/about/about.html'
-    });
     $stateProvider.state('register', {
         url: '/register',
         templateUrl: 'partial/register/register.html'

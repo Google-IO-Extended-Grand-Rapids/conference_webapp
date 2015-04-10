@@ -31,8 +31,6 @@
 <!-- Main App JS -->
 <script src="app.js"></script>
 <script src="partial/home/home.js"></script>
-<script src="partial/about/about.js"></script>
-<script src="partial/register/register.js"></script>
 <script src="partial/schedule/schedule.js"></script>
 <script src="partial/sponsors/sponsors.js"></script>
 <script src="partial/location/location.js"></script>
@@ -57,7 +55,6 @@
 
   <div class="collapse navbar-collapse">
     <ul class="nav navbar-nav navbar-right io-SiteNav-nav">
-      <li><a ui-sref="about">About</a></li>
       <li><a href="https://www.eventbrite.com/e/google-io-extended-grand-rapids-2015-tickets-16448633305">Register</a></li>
       <li><a ui-sref="schedule">Schedule</a></li>
       <li><a ui-sref="sponsors">Sponsors</a></li>
@@ -70,7 +67,9 @@
 <div class="row" ui-view></div>
 </main>
 
-<footer class="io-SiteFooter"></footer>
+<footer class="io-SiteFooter">
+  <small class="io-SiteFooter-copyright">Copyright &copy; 2015</small>
+</footer>
 
 </div>
 

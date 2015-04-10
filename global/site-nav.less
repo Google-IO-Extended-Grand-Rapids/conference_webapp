@@ -9,6 +9,7 @@ body {
 .io-PageContainer {
   width: 80%;
   margin: auto;
+  margin-bottom: 2em;
   padding: 0;
   box-shadow: 0 0 100px #000;
   background-color: #fff;
@@ -76,7 +77,6 @@ body {
   display: block;
   position: absolute;
   bottom: 0;
-  left: 0;
   min-width: 50%;
   padding: 1em 2em 1em 1em;
   margin-bottom: 4em;
@@ -157,6 +157,7 @@ body {
 
 .io-ContentArea-content {
   display: block;
+  padding-bottom: 1em;
   font-family: Cabin, sans-serif;
   font-size: 16px;
   line-height: 170%;
@@ -181,8 +182,21 @@ body {
 }
 
 .io-SiteFooter {
+  position: relative;
   margin-top: 25px;
-  height: 200px;
-  background-color: lightgray;
-  border-bottom: 50px solid black;
+  height: 150px;
+  background-color: #c6c6c9;
+}
+
+.io-SiteFooter-copyright {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
 }
