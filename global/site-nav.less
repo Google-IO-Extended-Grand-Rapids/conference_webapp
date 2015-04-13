@@ -15,6 +15,28 @@ body {
   background-color: #fff;
 }
 
+@media only screen and (max-width: 768px) {
+  .io-PageContainer {
+    width: 100%;
+  }
+}
+
+/* Bootstrap overrides */
+.navbar-toggle {
+  border-color: @io-blue;
+  & .icon-bar {
+    background-color: @io-blue;
+  }
+}
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+  background-color: @io-blue;
+  & .icon-bar {
+    background-color: @site-nav-bg;
+  }
+}
+/* End overrides */
+
 .io-SiteNav {
   margin-bottom: 0;
   border: none;
@@ -164,22 +186,42 @@ body {
 }
 
 .io-SponsorReel {
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
   list-style: none;
 }
 
 .io-SponsorReel-item {
   display: inline-block;
-  margin: 0 0 15px 15px;
-  width: 14vw;
-  height: 14vw;
-  border: 1px solid gray;
-  background-color: lightgray;
+  margin: 0;
+  padding: 13px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
 .io-SponsorReel-item:first {
-  margin-left: 0;
+  padding-left: 0;
 }
+
+.io-SponsorReel-item--platinum {
+    width: 50%;
+}
+.io-SponsorReel-item--gold {
+    width: 33%;
+}
+.io-SponsorReel-item--silver {
+    width: 25%;
+}
+.io-SponsorReel-item--bronze {
+    width: 20%;
+}
+
+.io-SponsorReel-logo {
+    width: 100%;
+    height: auto;
+}
+
 
 .io-SiteFooter {
   position: relative;

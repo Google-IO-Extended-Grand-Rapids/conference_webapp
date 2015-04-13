@@ -1,8 +1,23 @@
 .io-PageHeader--sponsors {
   .io-PageHeader-hero {
+    position: relative;
     height: 30vw;
-    background-color: lightgray;
-    border: 1px solid gray;
+    border-bottom: 1px solid #aaa;
+    background-color: #c6c6c9;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 1em;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url('https://s3.amazonaws.com/upload.uxpin/files/171719/191984/googleIOextended_horiz_grande-1.png');
+    }
   }
 }
 
