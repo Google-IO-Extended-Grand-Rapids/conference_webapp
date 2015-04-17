@@ -5,6 +5,9 @@
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
+
+ENV['VAGRANT_DEFAULT_PROVIDER'] = 'docker'
+
 Vagrant.configure(2) do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
@@ -12,7 +15,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "hashicorp/precise32"
+  #config.vm.box = "hashicorp/precise32"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -23,9 +26,17 @@ Vagrant.configure(2) do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   # config.vm.network "forwarded_port", guest: 80, host: 8080
-  config.vm.network "forwarded_port", guest: 9000, host: 9000
-  config.vm.network "forwarded_port", guest: 35729, host: 35729
-  config.vm.provision "shell", path: "vagrant_provision.sh"
+  #config.vm.network "forwarded_port", guest: 9000, host: 9000
+  #config.vm.network "forwarded_port", guest: 35729, host: 35729
+  #config.vm.provision "shell", path: "vagrant_provision.sh"
+
+  config.vm.define "website" do |web|
+    web.vm.provider "docker" do |d|
+      d.build_dir = "."
+      d.ports = ["9000:80"]
+      d.vagrant_vagrantfile = "./DockerHostVagrantfile"
+    end
+  end
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
