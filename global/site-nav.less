@@ -2,9 +2,40 @@
 @site-nav-bg: #000;
 @site-nav-link-color: #fff;
 
-.io-PageContainer {
-  padding: 0;
+body {
+  background-color: #777;
 }
+
+.io-PageContainer {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2em;
+  padding: 0;
+  box-shadow: 0 0 100px #000;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .io-PageContainer {
+    width: 100%;
+  }
+}
+
+/* Bootstrap overrides */
+.navbar-toggle {
+  border-color: @io-blue;
+  & .icon-bar {
+    background-color: @io-blue;
+  }
+}
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+  background-color: @io-blue;
+  & .icon-bar {
+    background-color: @site-nav-bg;
+  }
+}
+/* End overrides */
 
 .io-SiteNav {
   margin-bottom: 0;
@@ -68,7 +99,6 @@
   display: block;
   position: absolute;
   bottom: 0;
-  left: 0;
   min-width: 50%;
   padding: 1em 2em 1em 1em;
   margin-bottom: 4em;
@@ -149,32 +179,66 @@
 
 .io-ContentArea-content {
   display: block;
+  padding-bottom: 1em;
   font-family: Cabin, sans-serif;
   font-size: 16px;
   line-height: 170%;
 }
 
 .io-SponsorReel {
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
   list-style: none;
 }
 
 .io-SponsorReel-item {
   display: inline-block;
-  margin: 0 0 15px 15px;
-  width: 14vw;
-  height: 14vw;
-  border: 1px solid gray;
-  background-color: lightgray;
-}
-.io-SponsorReel-item:first {
-  margin-left: 0;
+  margin: 0;
+  padding: 13px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
+.io-SponsorReel-item:first {
+  padding-left: 0;
+}
+
+.io-SponsorReel-item--platinum {
+    width: 50%;
+}
+.io-SponsorReel-item--gold {
+    width: 33%;
+}
+.io-SponsorReel-item--silver {
+    width: 25%;
+}
+.io-SponsorReel-item--bronze {
+    width: 20%;
+}
+
+.io-SponsorReel-logo {
+    width: 100%;
+    height: auto;
+}
+
+
 .io-SiteFooter {
+  position: relative;
   margin-top: 25px;
-  height: 200px;
-  background-color: lightgray;
-  border-bottom: 50px solid black;
+  height: 150px;
+  background-color: #c6c6c9;
+}
+
+.io-SiteFooter-copyright {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
 }
