@@ -1,4 +1,4 @@
-<div ng-controller="ScheduleCtrl">
+<div ng-controller="ScheduleCtrl as schedule">
 
   <header class="io-PageHeader io-PageHeader--schedule">
     <div class="io-PageHeader-hero">
@@ -14,9 +14,7 @@
         <header class="io-ContentArea-header">
           <h3 class="io-ContentArea-header-title">Day 1</h3>
         </header>
-        <div class="io-ContentArea-content">
-          <p>To be determined...  Stay tuned!
-        </div>
+        <div class="io-ContentArea-content" ng-include="'partial/schedule/schedule-day.html'"></div>
       </section>
     </div>
   </div>
@@ -27,9 +25,7 @@
         <header class="io-ContentArea-header">
           <h3 class="io-ContentArea-header-title">Day 2</h3>
         </header>
-        <div class="io-ContentArea-content">
-          <p>To be determined...  Stay tuned!
-        </div>
+        <div class="io-ContentArea-content" ng-include="'partial/schedule/schedule-day.html'"></div>
       </section>
     </div>
   </div>

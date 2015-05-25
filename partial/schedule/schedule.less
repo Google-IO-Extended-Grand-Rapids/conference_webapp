@@ -3,3 +3,93 @@
   background-size: cover;
   background-image: url('//s3.amazonaws.com/upload.uxpin/files/171719/191984/gvsu-campus.jpg');
 }
+
+@time-col-width: 15vw;
+@toggle-col-width: 10vw;
+
+.io-SessionList {
+  list-style: none;
+  padding: 0;
+}
+
+.io-Session-wrapper {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.io-Session-header {
+  position: relative;
+  padding-left: @time-col-width;
+  padding-right: @toggle-col-width;
+}
+
+.io-Session-time {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  width: @time-col-width;
+  
+  .time-hour {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .time-label {
+    font-size: 17px;
+    font-weight: normal;
+  }
+}
+
+.io-Session-titlebar {
+  margin-bottom: 1em;
+  padding-right: @toggle-col-width;
+  
+  .title {
+    display: block;
+    margin-bottom: .5ex;
+    font-size: 17px;
+  }
+  .location {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+.io-Session-content {
+  padding-left: @time-col-width;
+  padding-right: @toggle-col-width;
+}
+
+.io-Session-description {
+  margin-bottom: 2em;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.io-Session-speakers {
+  margin-bottom: 2em;
+}
+
+.io-Session-speakers-heading {
+  font-size: 17px;
+  margin-bottom: 1em;
+}
+
+.io-Session-speakers-list {
+  list-style: none;
+  padding: 0;
+}
+
+.io-Session-speaker {
+  font-size: 14px;
+  line-height: 160%;
+  margin-bottom: 1em;
+  
+  .speaker-name {
+    font-weight: bold;
+  }
+  .speaker-company {
+  }
+  .speaker-bio {
+    padding-left: 1em;
+  }
+}
