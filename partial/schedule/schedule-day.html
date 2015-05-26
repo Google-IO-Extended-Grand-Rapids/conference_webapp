@@ -1,33 +1,37 @@
-<ul class="io-SessionList">
-  <li class="io-Session-wrapper" ng-repeat="session in schedule.sessions.day1">
-    <article class="io-Session">
-      <header class="io-Session-header">
-        <h4 class="io-Session-time" ng-hide="shouldHideTime(session.id)">
-          <span class="time-hour">{{ session.startDttm | date : 'h:mm' }}</span>
-          <span class="time-label">{{ session.startDttm | date : 'a' }}</span>
-        </h4>
-        <h5 class="io-Session-titlebar">
-          <span class="title">{{ session.name }}</span>
-          <span class="location">{{ session.room.shortDesc }}</span>
-        </h5>
-      </header>
-      <div class="io-Session-content">
-        <div class="io-Session-description">{{ session.fullDesc }}</div>
-        <div class="io-Session-speakers" ng-if="session.presenters.length">
-          <h6 class="io-Session-speakers-heading">Speakers</h6>
-          <ul class="io-Session-speakers-list">
-            <li class="io-Session-speaker" ng-repeat="speaker in session.presenters">
-              <span class="speaker-name">
-                {{ speaker.firstName }} {{ speaker.lastName }}<span ng-if="speaker.companyView.name">,</span>
-              </span>
-              <span class="speaker-company" ng-if="speaker.companyView.name">
-                {{ speaker.companyView.name }}
-              </span>
-              <p class="speaker-bio">{{ speaker.shortBio }}</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </article>
-  </li>
-</ul>
+<article class="io-Session"
+         ng-class="{expandable: session.fullDesc,
+                   expanded: schedule.isSessionExpanded(session.id),
+                   suppressedTime: schedule.isTimeSuppressed(session.id)}">
+  <header class="io-Session-header" ng-click="schedule.toggleSession(session.id)">
+    <h4 class="io-Session-time">
+      <span class="time-hour">{{ session.startDttm | date : 'h:mm' }}</span>
+      <span class="time-label">{{ session.startDttm | date : 'a' }}</span>
+    </h4>
+    <h5 class="io-Session-titlebar">
+      <span class="title">{{ session.name }}</span>
+      <span class="sessionType"
+            ng-class="{codelab: session.conferenceSessionType.id ===1,
+                      streaming: session.conferenceSessionType.id === 2,
+                      onsite: session.conferenceSessionType.id === 3}">
+        {{ session.conferenceSessionType.name }}</span>
+      <span class="location">{{ session.room.shortDesc }}</span>
+    </h5>
+  </header>
+  <div class="io-Session-content">
+    <div class="io-Session-description">{{ session.fullDesc }}</div>
+    <div class="io-Session-speakers" ng-if="session.presenters.length">
+      <h6 class="io-Session-speakers-heading">Speakers</h6>
+      <ul class="io-Session-speakers-list">
+        <li class="io-Session-speaker" ng-repeat="speaker in session.presenters">
+          <span class="speaker-name">
+            {{ speaker.firstName }} {{ speaker.lastName }}<span ng-if="speaker.companyView.name">,</span>
+          </span>
+          <span class="speaker-company" ng-if="speaker.companyView.name">
+            {{ speaker.companyView.name }}
+          </span>
+          <p class="speaker-bio">{{ speaker.shortBio }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</article>
