@@ -3,3 +3,186 @@
   background-size: cover;
   background-image: url('//s3.amazonaws.com/upload.uxpin/files/171719/191984/gvsu-campus.jpg');
 }
+
+@time-col-width: 15vw;
+@toggle-col-width: 10vw;
+
+.io-SessionList {
+  list-style: none;
+  padding: 0;
+}
+
+.io-Session {
+  padding: 1em 0;
+  border-top: 1px solid #ddd;
+}
+.io-Session:hover {
+  background-color: lighten(#0088d4, 53%);
+}
+.io-Session-wrapper:first-child .io-Session {
+  margin-top: -1rem;
+  border-top: none;
+}
+
+.io-Session-header {
+  position: relative;
+}
+
+.io-Session-time {
+  display: block;
+  .time-hour {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .time-label {
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .io-Session-header {
+    padding-left: @time-col-width;
+    padding-right: @toggle-col-width;
+  }
+
+  .io-Session-time {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    padding: 0 0.5em;
+    width: @time-col-width;
+  }
+
+  .io-Session-content {
+    padding-left: @time-col-width;
+    padding-right: @toggle-col-width;
+  }
+}
+
+.io-Session-titlebar {
+  margin-bottom: 1em;
+  
+  .title {
+    display: block;
+    margin-bottom: .5ex;
+    font-size: 17px;
+  }
+  .location {
+    display: inline-block;
+    font-size: 12px;
+  }
+  .sessionType {
+    display: inline-block;
+    padding: 2px .5em;
+    border-radius: 1em;
+    font-size: 12px;
+    color: white;
+
+    &.codelab { background-color: green; }
+    &.streaming { background-color: red; }
+    &.onsite { background-color: blue; }
+  }
+}
+
+.io-Session-description {
+  margin-bottom: 2em;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.io-Session-speakers {
+  margin-bottom: 2em;
+}
+
+.io-Session-speakers-heading {
+  font-size: 17px;
+  margin-bottom: 1em;
+}
+
+.io-Session-speakers-list {
+  list-style: none;
+  padding: 0;
+}
+
+.io-Session-speaker {
+  font-size: 14px;
+  line-height: 160%;
+  margin-bottom: 1em;
+  
+  .speaker-name {
+    font-weight: bold;
+  }
+  .speaker-company {
+  }
+  .speaker-bio {
+    padding-left: 1em;
+  }
+}
+
+/* Time-globbing shenanigans */
+.suppressedTime {
+  &.io-Session {
+    border-top-style: dashed;
+  }
+  .io-Session-time {
+    display: none;
+  }
+}
+
+/* Toggle-related shenanigans */
+.io-SessionList {
+  transform: translate3d(0, 0, 0);
+}
+.expandable .io-Session-header {
+  cursor: pointer;
+}
+.expandable .io-Session-header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 1em;
+  height: 0px;
+  width: 0px;
+  border: 10px solid transparent;
+  border-right-color: #ccc;
+}
+.expanded .io-Session-header:after {
+  border-right-color: transparent;
+  border-top-color: #ccc;
+  transform: translateX(5px) translateY(5px);
+}
+.expandable .io-Session-content {
+  max-height: 0px;
+  overflow-y: hidden;
+}
+.expandable.expanded .io-Session-content {
+  max-height: none;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .expandable .io-Session-content {
+    transform: translateX(10px) translateY(-5px);
+    opacity: 0;
+  }
+  .expandable.expanded .io-Session-content {
+    transform: translateX(0) translateY(0);
+    transition: opacity .3s ease-in-out, transform .2s ease-out;
+  }
+  
+  .io-Session {
+    opacity: 0;
+    -webkit-animation: fade-in .3s ease-in forwards;
+            animation: fade-in .3s ease-in forwards;
+  }
+  @-webkit-keyframes fade-in {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fade-in {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+}
